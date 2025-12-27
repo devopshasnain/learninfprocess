@@ -35,6 +35,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: githubactionsnode   # 👈 apni Azure Web App ka exact naam
+          app-name:    # 👈 apni Azure Web App ka exact naam
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
